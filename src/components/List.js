@@ -10,7 +10,8 @@ class List extends React.Component {
         e.preventDefault()
         if (this.state.item) {
             this.setState(prevState => ({
-                list: [...prevState.list, prevState.item]
+                list: [...prevState.list, prevState.item],
+                item: ""
             }))
         }
     }
